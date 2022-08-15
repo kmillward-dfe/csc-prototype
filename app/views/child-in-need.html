@@ -6,6 +6,16 @@
 {% endblock %}
 
 {% block content %}
+<nav id="app-navigation" class="app-navigation js-app-navigation govuk-clearfix" role="navigation" aria-labelledby="app-navigation-heading">
+  <h2 class="govuk-visually-hidden" id="app-navigation-heading">Menu</h2>
+  <ul class="app-navigation__list app-width-container">
+      <li class="active"><a href="/child-in-need.html"><strong>Child in Need</strong></a></li>
+      <li><a href="/child-protection.html"><strong>Child Protection</strong></a></li>
+      <li><a href="/child-looked-after.html"><strong>Child Looked After</strong></a></li>
+      <li><a href="/special-educational-needs.html"><strong>Special Educational Needs</strong></a></li>
+      <li><a href="/social-care-practitioner-data.html"><strong>Social Care Practitioner Data</strong></a></li>
+  </ul>
+</nav>
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
@@ -64,25 +74,19 @@
             <span class="govuk-caption-m">4 July 2022 - 10 July 2022</span>
           </h2>
           <img src="/public/images/cin-last-week-demand.jpg" alt="Graph showing the demand from the last week" width="100%">
-          <button class="govuk-button" data-module="govuk-button">
-            Download the data
-          </button>
+          <a href="#">Download the data</a>
           <hr/>
           <h2>Last month demand
             <span class="govuk-caption-m">1 January 2022 - 31 January 2022</span>
           </h2>
           <img src="/public/images/cin-last-month-demand.jpg" alt="Graph showing the demand from the last month" width="100%">
-          <button class="govuk-button" data-module="govuk-button">
-            Download the data
-          </button>
+          <a href="#">Download the data</a>
           <hr/>
           <h2>Last year demand
             <span class="govuk-caption-m">1 January 2022 - 31 December 2022</span>
           </h2>
           <img src="/public/images/cin-last-year-demand.jpg" alt="Graph showing the demand from the last year" width="100%">
-          <button class="govuk-button" data-module="govuk-button">
-            Download the data
-          </button>
+          <a href="#">Download the data</a>
         </div>
         <div class="govuk-tabs__panel" id="by-source">
           <details class="govuk-details" data-module="govuk-details">
@@ -172,8 +176,7 @@
               </tr>
             </tbody>
           </table>
-          <button class="govuk-button" data-module="govuk-button">
-            Download the data
+          <a href="#">Download the data</a>
           </button>
         </div>
         <div class="govuk-tabs__panel" id="re-referral">

@@ -8,3 +8,5 @@ if (window.console && window.console.info) {
 $(document).ready(function () {
   window.GOVUKFrontend.initAll()
 })
+
+$('.app-navigation').insertAfter('.govuk-header ');

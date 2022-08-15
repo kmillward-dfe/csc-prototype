@@ -5156,3 +5156,11 @@ x:-moz-any-link {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+* {
+  font-family: "GDS Transport", arial, sans-serif;
+}
+
+a:visited {
+  color: #1d70b8;
+}

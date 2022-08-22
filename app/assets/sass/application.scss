@@ -46,7 +46,7 @@ a:visited {
     max-width: 1100px;
 }
 
-.js-enabled .govuk-tabs__list, .js-enabled .govuk-tabs__list-item--selected, .js-enabled .govuk-tabs__panel {
+.js-enabled .govuk-tabs__panel {
     border: transparent;
 }
 
@@ -78,5 +78,14 @@ a:visited {
                 }
             }
         } 
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .govuk-width-container, .app-width-container, .app-navigation ul {
+        max-width: 990px;
+    }
+    .app-navigation ul li {
+        padding: 0 5px;
     }
 }

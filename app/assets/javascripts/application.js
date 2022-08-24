@@ -10,3 +10,15 @@ $(document).ready(function () {
 })
 
 $('.app-navigation').insertAfter('.govuk-header ');
+
+$(window).resize(function() {
+  // This will fire each time the window is resized:
+  if($(window).width() <= 753) {
+    //move search to the end of the mobile menu
+    //$(".govuk-header__navigation-list").insertAfter($(".govuk-header "));
+    $("#app-navigation").appendTo($(".govuk-header__navigation-list"));
+  } else {
+    // move to end of website top wrapper div
+    $("#app-navigation").insertAfter($(".govuk-header "));
+  }
+}).resize(); 

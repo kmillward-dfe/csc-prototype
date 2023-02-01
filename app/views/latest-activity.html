@@ -1,0 +1,92 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Latest Activity - Children's Social Care
+{% endblock %}
+
+{% block content %}
+<nav id="app-navigation" class="app-navigation js-app-navigation govuk-clearfix" role="navigation" aria-labelledby="app-navigation-heading">
+  <h2 class="govuk-visually-hidden" id="app-navigation-heading">Menu</h2>
+  <ul class="app-navigation__list app-width-container">
+    <li><a href="landing.html"><strong>Home</strong></a></li>
+    <li><a href="/latest-activity.html"><strong>Latest Activity</strong></a></li>
+    <li><a href="/child-in-need-landing.html"><strong>Child in Need</strong></a></li>
+    <li><a href="/child-protection.html"><strong>Child Protection</strong></a></li>
+    <li><a href="/child-looked-after.html"><strong>Child Looked After</strong></a></li>
+    <li><a href="/special-educational-needs.html"><strong>EHCP Referrals</strong></a></li>
+    <li><a href="/social-care-practitioner-data.html"><strong>Glossary</strong></a></li>
+  </ul>
+</nav>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h1 class="govuk-heading-xl">
+        Latest Activity
+      </h1>
+      
+      <p>This page shows a summary of the all of latest data received from local authority case management systems.</p>
+      
+      <div class="govuk-width-container">
+        <main class="govuk-main-wrapper">
+          <div class="govuk-grid-row latest-activity">
+            <div class="govuk-grid-column-one-third">
+              <div class="greybox">
+                <p class="header"><strong>Local Authority</strong></p>
+                <p><a href="#">Durham</a></p>
+              </div>  
+            </div>
+            <div class="govuk-grid-column-two-thirds">
+              <ul class="homepage-services-and-info__list">
+                <li class="chevron-card">
+                  <div class="chevron-card__wrapper">
+                    <p class="header"><strong><a class="govuk-link chevron-card__link" href="/cin-referrals.html">Referrals</a></strong></p>
+                
+                    <p class="govuk-body chevron-card__description">2<br/><br/>Latest Update: 25/01/2023</p>
+                  </div>
+                </li>
+                <li class="chevron-card">
+                  <div class="chevron-card__wrapper">
+                    <p class="header"><strong><a class="govuk-link chevron-card__link" href="/cin-child-fam-assess.html">Child Family Assessments</a></strong></p>
+                
+                    <p class="govuk-body chevron-card__description">6<br/><br/>Latest Update: 25/01/2023</p>
+                  </div>
+                </li>     
+                <li class="chevron-card">
+                  <div class="chevron-card__wrapper">
+                    <p class="header"><strong><a class="govuk-link chevron-card__link" href="/cin-plans.html">Child in Need plans</a></strong></p>
+                
+                    <p class="govuk-body chevron-card__description">3<br/><br/>Latest Update: 25/01/2023</p>
+                  </div>
+                </li> 
+                <li class="chevron-card">
+                  <div class="chevron-card__wrapper">
+                    <p class="header"><strong><a class="govuk-link chevron-card__link" href="#">Child Looked After</a></strong></p>
+                
+                    <p class="govuk-body chevron-card__description">1<br/><br/>Latest Update: 17/01/2023</p>
+                  </div>
+                </li> 
+                <li class="chevron-card">
+                  <div class="chevron-card__wrapper">
+                    <p class="header"><strong><a class="govuk-link chevron-card__link" href="#">S47</a></strong></p>
+                
+                    <p class="govuk-body chevron-card__description">2<br/><br/>Latest Update: 24/01/2023</p>
+                  </div>
+                </li> 
+                <li class="chevron-card">
+                  <div class="chevron-card__wrapper">
+                    <p class="header"><strong><a class="govuk-link chevron-card__link" href="#">Child Protection Plans</a></strong></p>
+                
+                    <p class="govuk-body chevron-card__description">2<br/><br/>Latest Update: 25/01/2023</p>
+                  </div>
+                </li> 
+              </ul>
+            </div>
+          </div>
+        </main>
+      </div>
+      
+    </div>
+  </div>
+
+{% endblock %}

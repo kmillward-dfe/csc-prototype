@@ -5157,6 +5157,10 @@ x:-moz-any-link {
   margin-bottom: 0;
 }
 
+.govuk-main-wrapper--auto-spacing:first-child, .govuk-main-wrapper--l {
+  padding-top: 20px;
+}
+
 * {
   font-family: "GDS Transport", arial, sans-serif;
 }
@@ -5217,6 +5221,197 @@ a:visited {
   text-decoration: underline;
 }
 
+a.form {
+  color: #ffffff;
+  background: #1d70b8;
+  font-size: 16px;
+  padding: 10px;
+  text-decoration: none;
+}
+a.form.hover {
+  color: #ffffff;
+  background: #003078;
+}
+
+.greybox {
+  background: #f4f4f4;
+  border-bottom: 5px solid #1d70b8;
+  padding: 20px;
+}
+.greybox p {
+  margin: 0;
+}
+.greybox p.header {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.greenbox {
+  background: #00703C;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.greenbox h2 {
+  margin: 0 0 10px 0;
+  color: #ffffff;
+}
+.greenbox p {
+  color: #ffffff;
+  margin: 0;
+}
+.greenbox p.header {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.filters h2 {
+  margin-top: 0;
+}
+.filters .govuk-accordion__section-button {
+  font-size: 20px;
+}
+.filters h3 {
+  font-size: 20px;
+}
+.filters .govuk-date-input__item {
+  margin-right: 10px;
+}
+.filters fieldset {
+  margin-bottom: 35px;
+}
+.filters fieldset:last-of-type {
+  margin-bottom: 0;
+}
+.filters fieldset select {
+  width: 100%;
+}
+
+.js-enabled .govuk-tabs__panel {
+  padding: 30px 0px;
+}
+
+.latest-activity .govuk-grid-column-one-third {
+  width: 25%;
+}
+.latest-activity .govuk-grid-column-two-thirds {
+  width: 75%;
+}
+.latest-activity .govuk-grid-column-one-half, .latest-activity .govuk-grid-column-full {
+  padding: 0 5px;
+}
+.latest-activity a:visited {
+  color: #1d70b8 !important;
+}
+
+.homepage-services-and-info__list {
+  display: grid;
+  grid-auto-flow: row;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 0;
+  padding: 0;
+}
+.homepage-services-and-info__list .chevron-card {
+  border-top: 1px solid #b1b4b6;
+  margin: 0 15px;
+  padding: 5px 0 20px 0;
+  list-style: none;
+}
+.homepage-services-and-info__list .chevron-card .chevron-card__wrapper {
+  padding: 10px 30px 10px 0;
+  position: relative;
+}
+.homepage-services-and-info__list .chevron-card .chevron-card__wrapper .chevron-card__link:before {
+  border-right: 3px solid #1d70b8;
+  border-top: 3px solid #1d70b8;
+  content: "";
+  display: block;
+  height: 7px;
+  position: absolute;
+  right: 5px;
+  top: 15px;
+  -webkit-transform: translateY(0) rotate(45deg) scale(1);
+  -ms-transform: translateY(0) rotate(45deg) scale(1);
+  transform: translateY(0) rotate(45deg) scale(1);
+  width: 7px;
+}
+.homepage-services-and-info__list .chevron-card .chevron-card__wrapper .chevron-card__link:after {
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.homepage-services-and-info__list .chevron-card .chevron-card__wrapper p {
+  margin: 0;
+}
+.homepage-services-and-info__list .chevron-card .chevron-card__wrapper p.header {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.landing-grid {
+  display: grid;
+  grid-auto-flow: row;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 0;
+  padding: 0;
+}
+.landing-grid .chevron-card {
+  list-style: none;
+  margin: 5px;
+}
+.landing-grid .chevron-card .chevron-card__wrapper {
+  position: relative;
+  background: #1f70b8;
+  padding: 20px;
+  min-height: 150px;
+  display: grid;
+  text-decoration: none;
+  border-bottom: 5px solid #0E385C;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.24);
+}
+.landing-grid .chevron-card .chevron-card__wrapper .inner-text {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.landing-grid .chevron-card .chevron-card__wrapper .inner-text p {
+  color: #ffffff;
+}
+.landing-grid .chevron-card .chevron-card__wrapper .inner-text p.header {
+  font-size: 24px;
+}
+.landing-grid .chevron-card .chevron-card__wrapper .inner-text p.intro-text {
+  margin-bottom: 0;
+}
+.landing-grid .chevron-card .chevron-card__wrapper:hover {
+  background: #ffffff;
+  border-bottom: 5px solid #626A6E;
+}
+.landing-grid .chevron-card .chevron-card__wrapper:hover p.header {
+  color: #1f70b8;
+}
+.landing-grid .chevron-card .chevron-card__wrapper:hover p.intro-text {
+  color: #0B0C0C;
+}
+
+.app-c-expander {
+  padding: 0 0 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #b1b4b6;
+}
+
 @media only screen and (max-width: 1100px) {
   .govuk-width-container, .app-width-container, .app-navigation ul {
     max-width: 990px;
@@ -5266,6 +5461,17 @@ a:visited {
 
   .govuk-header, .govuk-header__container {
     border-bottom: 0;
+  }
+
+  .landing-grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .latest-activity .govuk-grid-column-one-third, .latest-activity .govuk-grid-column-two-thirds {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 640px) {

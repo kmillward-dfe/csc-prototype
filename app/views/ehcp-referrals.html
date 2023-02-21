@@ -2,7 +2,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Child Family Assessments – Children's Social Care
+  Education Health Care Plans – Children's Social Care
 {% endblock %}
 
 {% block content %}
@@ -19,18 +19,7 @@
   </ul>
 </nav>
 
-
-<div class="govuk-breadcrumbs">
-  <ol class="govuk-breadcrumbs__list">
-    <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="/landing.html">Home</a>
-    </li>
-    <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="/child-in-need-landing.html">Child in Need</a>
-    </li>
-  </ol>
-</div>
-<h1 class="govuk-heading-xl">Child Family Assessments</h1>
+<h1 class="govuk-heading-xl">Education Health Care Plans (EHCP)</h1>
 
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
@@ -43,92 +32,7 @@
             <div class="govuk-accordion__section-header">
               <h3 class="govuk-accordion__section-heading">
                 <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
-                  Assessment Start Date
-                </span>
-              </h3>
-            </div>
-            <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
-              <div class="govuk-form-group">
-                <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
-                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-                    <h3 class="govuk-fieldset__heading">
-                      Date from
-                    </h3>
-                  </legend>
-                  <div id="passport-issued-hint" class="govuk-hint">
-                    For example, 30 1 2023
-                  </div>
-                  <div class="govuk-date-input" id="passport-issued">
-                    <div class="govuk-date-input__item">
-                      <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
-                          Day
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric">
-                      </div>
-                    </div>
-                    <div class="govuk-date-input__item">
-                      <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
-                          Month
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric">
-                      </div>
-                    </div>
-                    <div class="govuk-date-input__item">
-                      <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
-                          Year
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" inputmode="numeric">
-                      </div>
-                    </div>
-                  </div>
-                </fieldset>
-                <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
-                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-                    <h3 class="govuk-fieldset__heading">
-                      Date to
-                    </h3>
-                  </legend>
-                  <div id="passport-issued-hint" class="govuk-hint">
-                    For example, 30 1 2023
-                  </div>
-                  <div class="govuk-date-input" id="passport-issued">
-                    <div class="govuk-date-input__item">
-                      <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
-                          Day
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric">
-                      </div>
-                    </div>
-                    <div class="govuk-date-input__item">
-                      <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
-                          Month
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric">
-                      </div>
-                    </div>
-                    <div class="govuk-date-input__item">
-                      <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
-                          Year
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" inputmode="numeric">
-                      </div>
-                    </div>
-                  </div>
-                </fieldset>
-              </div>
-            </div>
-          </div>
-          <div class="govuk-accordion__section ">
-            <div class="govuk-accordion__section-header">
-              <h3 class="govuk-accordion__section-heading">
-                <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
-                  Assessment End Date
+                  Date range
                 </span>
               </h3>
             </div>
@@ -261,56 +165,45 @@
           </h2>
         <ul class="govuk-tabs__list">
           <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-            <a class="govuk-tabs__tab" href="#start-date">
-              Assessments started by date
+            <a class="govuk-tabs__tab" href="#ehcp-requests">
+              EHCP Requests
             </a>
           </li>
           <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#end-date">
-              Assessments ended by date
+            <a class="govuk-tabs__tab" href="#ehcp-assess-comp">
+              EHCP Assessments Completed
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#ehcp-issued">
+              EHCP Issued
             </a>
           </li>
         </ul>
         <!--inside tabs-->
-        <div class="govuk-tabs__panel" id="start-date">
-          <div class="govuk-grid-column-one-half">
-            <div class="greenbox">
-              <h2>Total Assessments started within date range</h2>
-              <p>5,101</p>  
-            </div>
-          </div>
-          <div class="govuk-grid-column-one-half">
-            <div class="greenbox">
-              <h2>Current Assessments started within date range</h2>
-              <p>766</p>  
-            </div>
+        <div class="govuk-tabs__panel" id="ehcp-requests">
+          <div class="greenbox">
+            <h2>EHCP Requests</h2>
+            <p>###</p>  
           </div>
           <img src="/public/images/pink.jpg" alt="Graph showing the demand from the last week" width="100%">
         </div>
 
-        <div class="govuk-tabs__panel" id="end-date">
-          <div class="govuk-grid-column-full">
-            <div class="greenbox">
-              <h2>Assessments completed</h2>
-              <p>3,597</p>  
-            </div>
-          </div>
-          <div class="govuk-grid-column-one-half">
-            <div class="greenbox">
-              <h2>Assessments completed in 45 days</h2>
-              <p>2,454</p>  
-            </div>
-          </div>
-          <div class="govuk-grid-column-one-half">
-            <div class="greenbox">
-              <h2>% Assessments completed in 45 days</h2>
-              <p>68.22%</p>  
-            </div>
+        <div class="govuk-tabs__panel" id="ehcp-assess-comp">
+          <div class="greenbox">
+            <h2>EHCP Assessments Completed</h2>
+            <p>###</p>  
           </div>
           <img src="/public/images/green.jpg" alt="Graph showing the demand from the last month" width="100%">
         </div>
 
-      
+        <div class="govuk-tabs__panel" id="ehcp-issued">
+          <div class="greenbox">
+            <h2>EHCP Issued</h2>
+            <p>###</p>  
+          </div>
+          <img src="/public/images/purple.jpg" alt="Graph showing the demand from the last week" width="100%">
+        </div>
       </div>
     </div>
     <!--END OF TABS-->

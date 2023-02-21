@@ -26,10 +26,19 @@ $govuk-assets-path: '/govuk/assets/';
 
 * {
     font-family: "GDS Transport", arial, sans-serif;
+    &:focus {
+        background-color: #ffdd00;
+        box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
+        outline: none;
+    }
 }
 
-a:visited {
-    color: #1d70b8;
+a {
+    font-size: 18px;
+    line-height: 28px;
+    &:visited {
+        color: #1d70b8;
+    }
 }
 
 .govuk-header {
@@ -64,7 +73,7 @@ a:visited {
         padding: 0;
         li {
         display: inline-block;
-        padding: 0 15px;
+        padding: 0 10px;
             &:first-of-type {
                 margin-left: -15px;
             }
@@ -82,18 +91,6 @@ a:visited {
                 }
             }
         } 
-    }
-}
-
-a.form {
-    color:#ffffff;
-    background:#1d70b8;
-    font-size: 16px;
-    padding: 10px;
-    text-decoration: none;
-    &.hover {
-        color: #ffffff;
-        background:#003078;
     }
 }
 
@@ -170,6 +167,47 @@ a.form {
     }
     
 }
+.app-section {
+    background: #1d70b8;
+    border-bottom: 5px solid #0E385C;
+    padding: 60px 0;
+    h1, p {
+        color: #ffffff;
+    }
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.landing-intro {
+    .landing-section {
+        border-top: 1px solid #b1b4b6;
+        padding: 5px 0 10px 0;
+    }
+}
+
+a.form {
+    color:#ffffff;
+    //background:#1d70b8;
+    background-color: #00703c;
+    -webkit-box-shadow: 0 2px 0 #002d18;
+    box-shadow: 0 2px 0 #002d18;
+    font-size: 18px;
+    padding: 10px;
+    text-decoration: none;
+    &:hover {
+        color: #ffffff;
+        //background:#003a69;
+        background: #005a30;;
+    }
+    &:focus {
+        border-color: #fd0;
+        outline: 10px solid rgba(0,0,0,0);
+        -webkit-box-shadow: inset 0 0 0 1px #fd0;
+        box-shadow: inset 0 0 0 1px #fd0;
+    }
+}
+
 .homepage-services-and-info__list {
     display: grid;
     grid-auto-flow: row;
@@ -221,6 +259,26 @@ a.form {
     }
 }
 
+ul.links-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+ul.links-list > li {
+    display: flex;
+    margin-bottom: 10px;
+}
+ul.links-list > li:before {
+    content: "\2022";
+    text-indent: -5px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+ul.links-list a {
+    margin: 0 0 0 10px;
+}
+
+
 .landing-grid {
     display: grid;
     grid-auto-flow: row;
@@ -230,9 +288,14 @@ a.form {
     grid-template-rows: 1fr 1fr;
     margin-top: 0;
     padding: 0;
+    &.gridtwo {
+        -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    }
     .chevron-card {
         list-style: none;
         margin: 5px;
+        display: flex;
         .chevron-card__wrapper {
             position: relative;
             background: #1f70b8;
@@ -346,6 +409,61 @@ a.form {
         }
     }
 }
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table.responsive, table.responsive thead, table.responsive tbody, table.responsive th, table.responsive td, table.responsive tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	table.responsive thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	table.responsive tr { border-bottom: 2px solid #ccc; margin-bottom: 10px;}
+	
+	table.responsive tbody td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+        padding: 10px 10px 10px 50%;
+        min-height: 10px;
+	}
+	
+	table.responsive td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+    table.responsive tfoot td { 
+        padding: 10px 10px 20px 10px;
+    }
+	/*
+	Label the data
+	*/
+	table.responsive tbody td:nth-of-type(1):before { content: "LA Child ID"; }
+	table.responsive tbody td:nth-of-type(2):before { content: "UPN*"; }
+	table.responsive tbody td:nth-of-type(3):before { content: "Referral Source"; }
+	table.responsive tbody td:nth-of-type(4):before { content: "Social care case ID"; }
+	table.responsive tbody td:nth-of-type(5):before { content: "Start Date"; }
+	table.responsive tbody td:nth-of-type(6):before { content: "End Date"; }
+	table.responsive tbody td:nth-of-type(7):before { content: "Previous Referral Date"; }
+	table.responsive tbody td:nth-of-type(8):before { content: "No Further Action"; }
+}
+
+
 @media only screen and (max-width: 640px) {
     .js-enabled .govuk-header__menu-button, .govuk-header .govuk-header__logo, .govuk-header .govuk-header__content .govuk-header__link--service-name, .app-navigation ul li {
         margin-right: max(15px, calc(15px + env(safe-area-inset-right)));

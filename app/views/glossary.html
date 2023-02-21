@@ -1,0 +1,70 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Glossary – Children's Social Care
+{% endblock %}
+
+{% block content %}
+<nav id="app-navigation" class="app-navigation js-app-navigation govuk-clearfix" role="navigation" aria-labelledby="app-navigation-heading">
+  <h2 class="govuk-visually-hidden" id="app-navigation-heading">Menu</h2>
+  <ul class="app-navigation__list app-width-container">
+    <li><a href="landing.html"><strong>Home</strong></a></li>
+    <li><a href="/latest-activity.html"><strong>Latest Activity</strong></a></li>
+    <li><a href="/child-in-need-landing.html"><strong>Child in Need</strong></a></li>
+    <li><a href="/child-protection-landing.html"><strong>Child Protection</strong></a></li>
+    <li><a href="/child-looked-after-landing.html"><strong>Child Looked After</strong></a></li>
+    <li><a href="/ehcp-referrals.html"><strong>Education Health Care Plans</strong></a></li>
+    <li><a href="/glossary.html"><strong>Glossary</strong></a></li>
+  </ul>
+</nav>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h1 class="govuk-heading-xl">
+        Glossary
+      </h1>
+      
+      <p>The below information explains some of the terminology used throughout this product in further detail for your understanding.</p>
+      
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Term</th>
+            <th scope="col" class="govuk-table__header">Description</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Child in Need (CiN)</th>
+            <td class="govuk-table__cell">A Child in Need is a child that has been assessed as needing support because of risks to development or health.</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Child Looked After (CLA)</th>
+            <td class="govuk-table__cell">A Child Looked After is a child that has been within the care of the Local Authority (LA) for more than 24 hours.</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Child Protection Plan (CPP)</th>
+            <td class="govuk-table__cell">A Child Protection Plan is made by the Local Authority (LA) for a child's care.</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Education Health Care Plan (EHCP)</th>
+            <td class="govuk-table__cell">An Education Health Care Plan may be issued following an Education Health Care Assessment. An ECHP is a plan made by the local authority for a child’s special educational provision.</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Initial Child Protection Conference (ICPC)</th>
+            <td class="govuk-table__cell">An Initial Child Protection Conference can be made as a result of a S47.</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Section 47 (S47)</th>
+            <td class="govuk-table__cell">A Section 47 enquiry is made where a child is likely to be harmed or suffering and may result in an ICPC.</td>
+          </tr>
+        </tbody>
+      </table>
+    
+    </div>
+
+    </div>
+  </div>
+
+{% endblock %}

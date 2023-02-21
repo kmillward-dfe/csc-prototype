@@ -22,3 +22,5 @@ $(window).resize(function() {
     $("#app-navigation").insertAfter($(".govuk-header "));
   }
 }).resize(); 
+
+$(".app-section").insertAfter(".app-navigation");

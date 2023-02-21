@@ -2,7 +2,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Child Family Assessments – Children's Social Care
+  CLA Total & Current Cases – Children's Social Care
 {% endblock %}
 
 {% block content %}
@@ -19,18 +19,18 @@
   </ul>
 </nav>
 
-
 <div class="govuk-breadcrumbs">
   <ol class="govuk-breadcrumbs__list">
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="/landing.html">Home</a>
     </li>
     <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="/child-in-need-landing.html">Child in Need</a>
+      <a class="govuk-breadcrumbs__link" href="/child-looked-after-landing.html">Child Looked After</a>
     </li>
   </ol>
 </div>
-<h1 class="govuk-heading-xl">Child Family Assessments</h1>
+
+<h1 class="govuk-heading-xl">Total & Current Cases</h1>
 
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
@@ -43,7 +43,7 @@
             <div class="govuk-accordion__section-header">
               <h3 class="govuk-accordion__section-heading">
                 <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
-                  Assessment Start Date
+                  Child Looked After Date Range
                 </span>
               </h3>
             </div>
@@ -124,96 +124,11 @@
               </div>
             </div>
           </div>
-          <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section">
             <div class="govuk-accordion__section-header">
               <h3 class="govuk-accordion__section-heading">
                 <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
-                  Assessment End Date
-                </span>
-              </h3>
-            </div>
-            <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
-              <div class="govuk-form-group">
-                <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
-                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-                    <h3 class="govuk-fieldset__heading">
-                      Date from
-                    </h3>
-                  </legend>
-                  <div id="passport-issued-hint" class="govuk-hint">
-                    For example, 30 1 2023
-                  </div>
-                  <div class="govuk-date-input" id="passport-issued">
-                    <div class="govuk-date-input__item">
-                      <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
-                          Day
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric">
-                      </div>
-                    </div>
-                    <div class="govuk-date-input__item">
-                      <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
-                          Month
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric">
-                      </div>
-                    </div>
-                    <div class="govuk-date-input__item">
-                      <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
-                          Year
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" inputmode="numeric">
-                      </div>
-                    </div>
-                  </div>
-                </fieldset>
-                <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
-                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-                    <h3 class="govuk-fieldset__heading">
-                      Date to
-                    </h3>
-                  </legend>
-                  <div id="passport-issued-hint" class="govuk-hint">
-                    For example, 30 1 2023
-                  </div>
-                  <div class="govuk-date-input" id="passport-issued">
-                    <div class="govuk-date-input__item">
-                      <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
-                          Day
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric">
-                      </div>
-                    </div>
-                    <div class="govuk-date-input__item">
-                      <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
-                          Month
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric">
-                      </div>
-                    </div>
-                    <div class="govuk-date-input__item">
-                      <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
-                          Year
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" inputmode="numeric">
-                      </div>
-                    </div>
-                  </div>
-                </fieldset>
-              </div>
-            </div>
-          </div>
-          <!--<div class="govuk-accordion__section">
-            <div class="govuk-accordion__section-header">
-              <h3 class="govuk-accordion__section-heading">
-                <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
-                  Referral Source
+                  Placement Type
                 </span>
               </h3>
             </div>
@@ -233,14 +148,14 @@
                           </label>
                           <select class="govuk-select" name="source" id="source">
                             <option value="1">All sources</option>
-                            <option value="2">A&E</option>
-                            <option value="3">Acquaintence</option>
-                            <option value="4">Anonymous</option>
-                            <option value="5">Education Services</option>
-                            <option value="6">External Local Authority</option>
-                            <option value="7">Family/Carer</option>
-                            <option value="8">GP</option>
-                            <option value="9">Health Visitor</option>
+                            <option value="2">A4</option>
+                            <option value="3">A5</option>
+                            <option value="4">A6</option>
+                            <option value="5">H5</option>
+                            <option value="6">K1</option>
+                            <option value="7">K2</option>
+                            <option value="8">P1</option>
+                            <option value="9">P2</option>
                           </select>
                         </div>
                       </div>
@@ -248,7 +163,7 @@
                   </fieldset>
               </div>
             </div>
-          </div>-->
+          </div>
         </div>
       </div>
       <!--END OF FILTERS-->
@@ -291,20 +206,8 @@
         <div class="govuk-tabs__panel" id="end-date">
           <div class="govuk-grid-column-full">
             <div class="greenbox">
-              <h2>Assessments completed</h2>
-              <p>3,597</p>  
-            </div>
-          </div>
-          <div class="govuk-grid-column-one-half">
-            <div class="greenbox">
-              <h2>Assessments completed in 45 days</h2>
-              <p>2,454</p>  
-            </div>
-          </div>
-          <div class="govuk-grid-column-one-half">
-            <div class="greenbox">
-              <h2>% Assessments completed in 45 days</h2>
-              <p>68.22%</p>  
+              <h2>UASC that became CLA within selected date range</h2>
+              <p>31</p>  
             </div>
           </div>
           <img src="/public/images/green.jpg" alt="Graph showing the demand from the last month" width="100%">

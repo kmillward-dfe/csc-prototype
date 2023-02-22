@@ -8789,6 +8789,10 @@ a:visited {
   border: transparent;
 }
 
+[title~=amber] {
+  background: pink;
+}
+
 .app-navigation {
   border-bottom: 1px solid #b1b4b6;
   background-color: #f8f8f8;

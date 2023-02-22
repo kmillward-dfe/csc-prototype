@@ -24,3 +24,10 @@ $(window).resize(function() {
 }).resize(); 
 
 $(".app-section").insertAfter(".app-navigation");
+
+$(document).ready(function() {
+  if(window.location.pathname.match('amber')){
+      $("body").addClass("amber");
+  }
+  $(".amber .govuk-header__content .govuk-header__link").html("Amber's Content");
+});

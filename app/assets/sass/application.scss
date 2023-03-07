@@ -29,7 +29,8 @@ $govuk-assets-path: '/govuk/assets/';
     &:focus {
         background-color: #ffdd00;
         box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
-        outline: none;
+        outline: 2px solid #ffdd00;
+        color: #0b0c0c;
     }
 }
 
@@ -92,6 +93,9 @@ a {
                 &:hover {
                     color: #003078;
                     text-decoration: underline;
+                }
+                &:focus {
+                    color: #0b0c0c;
                 }
             }
         } 
@@ -229,6 +233,15 @@ a.form {
         .chevron-card__wrapper {
             padding: 10px 30px 10px 0;
             position: relative;
+            &:focus {
+                outline: 3px solid transparent;
+                color: #0b0c0c!important;
+                background-color: #fd0;
+                border-bottom: 5px solid #0b0c0c;
+                p {
+                    color: #0b0c0c;
+                }
+            }
             .chevron-card__link:before {
                 border-right: 3px solid #1d70b8;
                 border-top: 3px solid #1d70b8;
@@ -311,6 +324,17 @@ ul.links-list a {
             box-shadow: 1px 2px 5px 1px rgb(0 0 0 / 24%);
             -webkit-box-shadow: 1px 2px 5px 1px rgba(0,0,0,0.24);
             -moz-box-shadow: 1px 2px 5px 1px rgba(0,0,0,0.24);
+            &:focus {
+                outline: 3px solid transparent;
+                color: #0b0c0c!important;
+                background-color: #fd0;
+                border-bottom: 5px solid #0b0c0c;
+                .inner-text {
+                    p {
+                        color: #0b0c0c;
+                    }
+                }
+            }
             .inner-text {
                 margin: 0;
                 display: flex;

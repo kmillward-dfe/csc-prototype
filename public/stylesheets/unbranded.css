@@ -8756,7 +8756,8 @@ x:-moz-any-link {
 *:focus {
   background-color: #ffdd00;
   box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
-  outline: none;
+  outline: 2px solid #ffdd00;
+  color: #0b0c0c;
 }
 
 a {
@@ -8821,6 +8822,9 @@ a:visited {
 .app-navigation ul li a:hover {
   color: #003078;
   text-decoration: underline;
+}
+.app-navigation ul li a:focus {
+  color: #0b0c0c;
 }
 
 .greybox {
@@ -8950,6 +8954,15 @@ a.form:focus {
   padding: 10px 30px 10px 0;
   position: relative;
 }
+.homepage-services-and-info__list .chevron-card .chevron-card__wrapper:focus {
+  outline: 3px solid transparent;
+  color: #0b0c0c !important;
+  background-color: #fd0;
+  border-bottom: 5px solid #0b0c0c;
+}
+.homepage-services-and-info__list .chevron-card .chevron-card__wrapper:focus p {
+  color: #0b0c0c;
+}
 .homepage-services-and-info__list .chevron-card .chevron-card__wrapper .chevron-card__link:before {
   border-right: 3px solid #1d70b8;
   border-top: 3px solid #1d70b8;
@@ -9033,6 +9046,15 @@ ul.links-list a {
   box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.24);
   -webkit-box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.24);
   -moz-box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.24);
+}
+.landing-grid .chevron-card .chevron-card__wrapper:focus {
+  outline: 3px solid transparent;
+  color: #0b0c0c !important;
+  background-color: #fd0;
+  border-bottom: 5px solid #0b0c0c;
+}
+.landing-grid .chevron-card .chevron-card__wrapper:focus .inner-text p {
+  color: #0b0c0c;
 }
 .landing-grid .chevron-card .chevron-card__wrapper .inner-text {
   margin: 0;

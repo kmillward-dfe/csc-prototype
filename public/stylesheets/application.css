@@ -8768,6 +8768,12 @@ a:visited {
   color: #1d70b8;
 }
 
+li {
+  font-size: 19px;
+  color: #0b0c0c;
+  -webkit-font-smoothing: antialiased;
+}
+
 .govuk-header {
   border-bottom: 10px solid #1d70b8;
 }
@@ -8788,10 +8794,6 @@ a:visited {
 
 .js-enabled .govuk-tabs__panel {
   border: transparent;
-}
-
-[title~=amber] {
-  background: pink;
 }
 
 .app-navigation {

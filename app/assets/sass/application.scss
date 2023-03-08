@@ -42,6 +42,12 @@ a {
     }
 }
 
+li {
+    font-size: 19px;
+    color: #0b0c0c;
+    -webkit-font-smoothing: antialiased;
+}
+
 .govuk-header {
     border-bottom: 10px solid #1d70b8;
     .govuk-header__logo {
@@ -63,10 +69,6 @@ a {
 .js-enabled .govuk-tabs__panel {
     border: transparent;
 }
-
-[title~="amber"] {
-    background: pink;
-  }
 
 //navigation
 .app-navigation {

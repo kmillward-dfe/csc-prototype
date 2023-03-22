@@ -6176,17 +6176,20 @@ h1 .govuk-heading-l {
 }
 
 .greenbox {
-  background: #00703C;
+  margin-bottom: 20px;
+  background: #ffffff;
+  border-left: 10px solid #b1b4b6;
   padding: 20px;
-  margin-bottom: 10px;
 }
 .greenbox h2 {
   margin: 0 0 10px 0;
-  color: #ffffff;
+  color: #0b0c0c;
+  font-size: 20px;
 }
 .greenbox p {
-  color: #ffffff;
+  color: #0b0c0c;
   margin: 0;
+  font-size: 20px;
 }
 .greenbox p.header {
   font-size: 18px;

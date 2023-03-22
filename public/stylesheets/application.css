@@ -9171,6 +9171,14 @@ ul.links-list a {
   .app-navigation ul li {
     padding: 0 5px;
   }
+
+  .govuk-header .govuk-header__logo {
+    width: 20%;
+  }
+
+  .govuk-header .govuk-header__content {
+    width: 80%;
+  }
 }
 @media only screen and (max-width: 1119px) {
   .app-width-container, .app-navigation ul {
@@ -9183,7 +9191,20 @@ ul.links-list a {
     margin-left: 0;
   }
 }
+@media only screen and (max-width: 912px) {
+  .govuk-header .govuk-header__logo {
+    width: 25%;
+  }
+
+  .govuk-header .govuk-header__content {
+    width: 75%;
+  }
+}
 @media only screen and (max-width: 768px) {
+  .govuk-template {
+    overflow-x: hidden;
+  }
+
   .app-navigation {
     border-top: 10px solid #1d70b8;
     width: 100%;
@@ -9201,13 +9222,21 @@ ul.links-list a {
     width: 100%;
   }
 
-  .js-enabled .govuk-header__menu-button, .govuk-header .govuk-header__logo, .govuk-header .govuk-header__content .govuk-header__link--service-name, .app-navigation ul li {
+  .js-enabled .govuk-header__menu-button, .govuk-header .govuk-header__logo, .govuk-header .govuk-header__content .govuk-header__link--service-name, .app-navigation ul li, .govuk-header .govuk-header__content {
     margin-right: max(30px, 15px + env(safe-area-inset-right));
     margin-left: max(30px, 15px + env(safe-area-inset-left)) !important;
   }
 
-  .govuk-header .govuk-width-container {
+  .govuk-header__navigation {
+    margin-left: -30px;
+  }
+
+  .govuk-header .govuk-width-container, main .govuk-width-container {
     margin: 0;
+  }
+
+  .govuk-heading-xl {
+    margin-bottom: 20px;
   }
 
   .govuk-header, .govuk-header__container {
@@ -9303,7 +9332,7 @@ ul.links-list a {
   }
 }
 @media only screen and (max-width: 640px) {
-  .js-enabled .govuk-header__menu-button, .govuk-header .govuk-header__logo, .govuk-header .govuk-header__content .govuk-header__link--service-name, .app-navigation ul li {
+  .js-enabled .govuk-header__menu-button, .govuk-header .govuk-header__logo, .govuk-header .govuk-header__content .govuk-header__link--service-name, .govuk-header .govuk-header__content, .app-navigation ul li {
     margin-right: max(15px, 15px + env(safe-area-inset-right));
     margin-left: max(15px, 15px + env(safe-area-inset-left)) !important;
   }

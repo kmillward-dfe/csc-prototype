@@ -9,7 +9,7 @@
 <nav id="app-navigation" class="app-navigation js-app-navigation govuk-clearfix" role="navigation" aria-labelledby="app-navigation-heading">
   <h2 class="govuk-visually-hidden" id="app-navigation-heading">Menu</h2>
   <ul class="app-navigation__list app-width-container">
-    <li><a href="landing.html"><strong>Home</strong></a></li>
+    <li><a href="/index.html"><strong>Home</strong></a></li>
     <li><a href="/latest-activity.html"><strong>Latest Activity</strong></a></li>
     <li><a href="/child-in-need-landing.html"><strong>Child in Need</strong></a></li>
     <li><a href="/child-protection-landing.html"><strong>Child Protection</strong></a></li>
@@ -32,7 +32,7 @@
             <div class="govuk-accordion__section-header">
               <h3 class="govuk-accordion__section-heading">
                 <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
-                  Date range
+                  Social Care case date range
                 </span>
               </h3>
             </div>
@@ -50,26 +50,20 @@
                   <div class="govuk-date-input" id="passport-issued">
                     <div class="govuk-date-input__item">
                       <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
-                          Day
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric">
+                        <label for="day-from" class="govuk-label govuk-date-input__label">Day</label>
+                        <input type="text" id="day-from" name="day-from" class="govuk-input govuk-date-input__input govuk-input--width-2" inputmode="numeric">
                       </div>
                     </div>
                     <div class="govuk-date-input__item">
                       <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
-                          Month
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric">
+                        <label for="month-from" class="govuk-label govuk-date-input__label">Month</label>
+                        <input type="text" id="month-from" name="month-from" class="govuk-input govuk-date-input__input govuk-input--width-2" inputmode="numeric">
                       </div>
                     </div>
                     <div class="govuk-date-input__item">
                       <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
-                          Year
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" inputmode="numeric">
+                        <label for="year-from" class="govuk-label govuk-date-input__label">Year</label>
+                        <input type="text" id="year-from" name="year-from" class="govuk-input govuk-date-input__input govuk-input--width-4" inputmode="numeric">
                       </div>
                     </div>
                   </div>
@@ -86,26 +80,20 @@
                   <div class="govuk-date-input" id="passport-issued">
                     <div class="govuk-date-input__item">
                       <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
-                          Day
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric">
+                        <label class="govuk-label govuk-date-input__label" for="day-to">Day</label>
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="day-to" name="day-to" type="text" inputmode="numeric">
                       </div>
                     </div>
                     <div class="govuk-date-input__item">
                       <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
-                          Month
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric">
+                        <label class="govuk-label govuk-date-input__label" for="month-to">Month</label>
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="month-to" name="month-to" type="text" inputmode="numeric">
                       </div>
                     </div>
                     <div class="govuk-date-input__item">
                       <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
-                          Year
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" inputmode="numeric">
+                        <label class="govuk-label govuk-date-input__label" for="year-to">Year</label>
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="year-to" name="year-to" type="text" inputmode="numeric">
                       </div>
                     </div>
                   </div>
@@ -184,7 +172,7 @@
         <div class="govuk-tabs__panel" id="ehcp-requests">
           <div class="greenbox">
             <h2>EHCP Requests</h2>
-            <p>###</p>  
+            <p>204</p>  
           </div>
           <img src="/public/images/pink.jpg" alt="Graph showing the demand from the last week" width="100%">
         </div>
@@ -192,7 +180,7 @@
         <div class="govuk-tabs__panel" id="ehcp-assess-comp">
           <div class="greenbox">
             <h2>EHCP Assessments Completed</h2>
-            <p>###</p>  
+            <p>213</p>  
           </div>
           <img src="/public/images/green.jpg" alt="Graph showing the demand from the last month" width="100%">
         </div>
@@ -200,7 +188,7 @@
         <div class="govuk-tabs__panel" id="ehcp-issued">
           <div class="greenbox">
             <h2>EHCP Issued</h2>
-            <p>###</p>  
+            <p>203</p>  
           </div>
           <img src="/public/images/purple.jpg" alt="Graph showing the demand from the last week" width="100%">
         </div>

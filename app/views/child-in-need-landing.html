@@ -9,7 +9,7 @@
 <nav id="app-navigation" class="app-navigation js-app-navigation govuk-clearfix" role="navigation" aria-labelledby="app-navigation-heading">
   <h2 class="govuk-visually-hidden" id="app-navigation-heading">Menu</h2>
   <ul class="app-navigation__list app-width-container">
-    <li><a href="landing.html"><strong>Home</strong></a></li>
+    <li><a href="/index.html"><strong>Home</strong></a></li>
     <li><a href="/latest-activity.html"><strong>Latest Activity</strong></a></li>
     <li><a href="/child-in-need-landing.html"><strong>Child in Need</strong></a></li>
     <li><a href="/child-protection-landing.html"><strong>Child Protection</strong></a></li>
@@ -25,8 +25,16 @@
         Child in Need (CiN)
       </h1>
       
-      <p>Shows referrals to children’s social care services for Children in Need (CiN) and number of Child in Need plans issued. Children in Need are assessed as needing help and protection because of risks to the development or health.</p>
+      <p>Shows referrals to children’s social care services for <!--<a class="btn" href="#open-modal">-->Children in Need (CiN)<!--</a>--> and number of Child in Need plans issued. Children in Need are assessed as needing help and protection because of risks to the development or health.</p>
       
+      <!-- <div id="open-modal" class="modal-window">
+        <div>
+          <a href="#" title="Close" class="modal-close">Close</a>
+          <h2>Children in Need (CiN)</h2>
+          <p>A Child in Need is a child that has been assessed as needing support because of risks to development or health.</p>
+        </div>
+      </div> -->
+
       <ul class="landing-grid">
         <li class="chevron-card">
           <a class="chevron-card__wrapper" href="/cin-referrals.html">
@@ -62,6 +70,34 @@
         </li> 
       </ul>
     
+      <details class="govuk-details gloss" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Glossary and abbreviations
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header">Term</th>
+                <th scope="col" class="govuk-table__header">Description</th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Child in Need (CiN)</th>
+                <td class="govuk-table__cell">A Child in Need is a child that has been assessed as needing support because of risks to development or health.</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">No Further Actions (NFA)</th>
+                <td class="govuk-table__cell">Description goes here.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+
     </div>
 
     </div>

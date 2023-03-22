@@ -9,7 +9,7 @@
 <nav id="app-navigation" class="app-navigation js-app-navigation govuk-clearfix" role="navigation" aria-labelledby="app-navigation-heading">
   <h2 class="govuk-visually-hidden" id="app-navigation-heading">Menu</h2>
   <ul class="app-navigation__list app-width-container">
-    <li><a href="landing.html"><strong>Home</strong></a></li>
+    <li><a href="/index.html"><strong>Home</strong></a></li>
     <li><a href="/latest-activity.html"><strong>Latest Activity</strong></a></li>
     <li><a href="/child-in-need-landing.html"><strong>Child in Need</strong></a></li>
     <li><a href="/child-protection-landing.html"><strong>Child Protection</strong></a></li>
@@ -36,7 +36,7 @@
 <h1 class="govuk-heading-xl">Referral & Re-referral Breakdowns<br/>
   <span class="govuk-heading-l">Child Level</span></h1>
 
-<div class="govuk-width-container">
+  <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row latest-activity">
       <!--FILTERS-->
@@ -65,26 +65,20 @@
                   <div class="govuk-date-input" id="passport-issued">
                     <div class="govuk-date-input__item">
                       <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
-                          Day
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric">
+                        <label for="day-from" class="govuk-label govuk-date-input__label">Day</label>
+                        <input type="text" id="day-from" name="day-from" class="govuk-input govuk-date-input__input govuk-input--width-2" inputmode="numeric">
                       </div>
                     </div>
                     <div class="govuk-date-input__item">
                       <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
-                          Month
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric">
+                        <label for="month-from" class="govuk-label govuk-date-input__label">Month</label>
+                        <input type="text" id="month-from" name="month-from" class="govuk-input govuk-date-input__input govuk-input--width-2" inputmode="numeric">
                       </div>
                     </div>
                     <div class="govuk-date-input__item">
                       <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
-                          Year
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" inputmode="numeric">
+                        <label for="year-from" class="govuk-label govuk-date-input__label">Year</label>
+                        <input type="text" id="year-from" name="year-from" class="govuk-input govuk-date-input__input govuk-input--width-4" inputmode="numeric">
                       </div>
                     </div>
                   </div>
@@ -101,26 +95,20 @@
                   <div class="govuk-date-input" id="passport-issued">
                     <div class="govuk-date-input__item">
                       <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
-                          Day
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric">
+                        <label class="govuk-label govuk-date-input__label" for="day-to">Day</label>
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="day-to" name="day-to" type="text" inputmode="numeric">
                       </div>
                     </div>
                     <div class="govuk-date-input__item">
                       <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
-                          Month
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric">
+                        <label class="govuk-label govuk-date-input__label" for="month-to">Month</label>
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="month-to" name="month-to" type="text" inputmode="numeric">
                       </div>
                     </div>
                     <div class="govuk-date-input__item">
                       <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
-                          Year
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" inputmode="numeric">
+                        <label class="govuk-label govuk-date-input__label" for="year-to">Year</label>
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="year-to" name="year-to" type="text" inputmode="numeric">
                       </div>
                     </div>
                   </div>
@@ -152,14 +140,26 @@
                           </label>
                           <select class="govuk-select" name="source" id="source">
                             <option value="1">All sources</option>
-                            <option value="2">A&E</option>
+                            <option value="2">Accident &amp; Emergency</option>
                             <option value="3">Acquaintence</option>
                             <option value="4">Anonymous</option>
                             <option value="5">Education Services</option>
                             <option value="6">External Local Authority</option>
                             <option value="7">Family/Carer</option>
-                            <option value="8">GP</option>
+                            <option value="8">General Practitioner</option>
                             <option value="9">Health Visitor</option>
+                            <option value="10">Housing</option>
+                            <option value="11">Local Authority Department</option>
+                            <option value="12">Local Authority Social Care</option>
+                            <option value="13">Other Agency</option>
+                            <option value="14">Other Health Service</option>
+                            <option value="15">Other Individual</option>
+                            <option value="16">Other Legal Agency</option>
+                            <option value="17">Other Primary Health Service</option>
+                            <option value="18">Police</option>
+                            <option value="19">School Nurse</option>
+                            <option value="20">Schools</option>
+                            <option value="21">Unknown</option>
                           </select>
                         </div>
                       </div>
@@ -177,7 +177,7 @@
         <table class="govuk-table responsive">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header app-custom-class" tabindex="0">LA Child ID</th>
+              <th scope="col" class="govuk-table__header app-custom-class" tabindex="0">Local Authority Child ID</th>
               <th scope="col" class="govuk-table__header app-custom-class" tabindex="0">UPN*</th>
               <th scope="col" class="govuk-table__header app-custom-class" tabindex="0">Referral Source</th>
               <th scope="col" class="govuk-table__header app-custom-class" tabindex="0">Social care case ID</th>
@@ -189,105 +189,323 @@
           </thead>
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row" tabindex="0">
-              <td scope="row" class="govuk-table__header" tabindex="0">2000304</td>
-              <td class="govuk-table__cell" tabindex="0"></td>
-              <td class="govuk-table__cell" tabindex="0">A&E</td>
-              <td class="govuk-table__cell" tabindex="0">11405</td>
-              <td class="govuk-table__cell" tabindex="0">01/01/2023</td>
-              <td class="govuk-table__cell" tabindex="0"></td>
-              <td class="govuk-table__cell" tabindex="0">08/04/2022</td>
+              <td scope="row" class="govuk-table__header" tabindex="0">3440177827</td>
+              <td class="govuk-table__cell" tabindex="0">AAA9297146791</td>
+              <td class="govuk-table__cell" tabindex="0">Accident &amp; Emergency</td>
+              <td class="govuk-table__cell" tabindex="0">48532</td>
+              <td class="govuk-table__cell" tabindex="0">25/01/2022</td>
+              <td class="govuk-table__cell" tabindex="0">N/A</td>
+              <td class="govuk-table__cell" tabindex="0">01/01/2022</td>
               <td class="govuk-table__cell" tabindex="0">No</td>
             </tr>
             <tr class="govuk-table__row" tabindex="0">
-              <td scope="row" class="govuk-table__header" tabindex="0">2007726</td>
-              <td class="govuk-table__cell" tabindex="0"></td>
+              <td scope="row" class="govuk-table__header" tabindex="0">4289522934</td>
+              <td class="govuk-table__cell" tabindex="0">AAA9619852893</td>
+              <td class="govuk-table__cell" tabindex="0">Acquaintance</td>
+              <td class="govuk-table__cell" tabindex="0">32251</td>
+              <td class="govuk-table__cell" tabindex="0">06/01/2022</td>
+              <td class="govuk-table__cell" tabindex="0">N/A</td>
+              <td class="govuk-table__cell" tabindex="0">01/01/2022</td>
+              <td class="govuk-table__cell" tabindex="0">No</td>
+            </tr>
+            <tr class="govuk-table__row" tabindex="0">
+              <td scope="row" class="govuk-table__header" tabindex="0">1479411328</td>
+              <td class="govuk-table__cell" tabindex="0">AAA4711648534</td>
+              <td class="govuk-table__cell" tabindex="0">Anonymous</td>
+              <td class="govuk-table__cell" tabindex="0">20461</td>
+              <td class="govuk-table__cell" tabindex="0">05/03/2022</td>
+              <td class="govuk-table__cell" tabindex="0">N/A</td>
+              <td class="govuk-table__cell" tabindex="0">01/01/2022</td>
+              <td class="govuk-table__cell" tabindex="0">Yes</td>
+            </tr>
+            <tr class="govuk-table__row" tabindex="0">
+              <td scope="row" class="govuk-table__header" tabindex="0">3411053633</td>
+              <td class="govuk-table__cell" tabindex="0">AAA9917398168</td>
+              <td class="govuk-table__cell" tabindex="0">Education Services</td>
+              <td class="govuk-table__cell" tabindex="0">37517</td>
+              <td class="govuk-table__cell" tabindex="0">24/02/2022</td>
+              <td class="govuk-table__cell" tabindex="0">25/04/2022</td>
+              <td class="govuk-table__cell" tabindex="0">01/01/2022</td>
+              <td class="govuk-table__cell" tabindex="0">No</td>
+            </tr>
+            <tr class="govuk-table__row" tabindex="0">
+              <td scope="row" class="govuk-table__header" tabindex="0">8663463270</td>
+              <td class="govuk-table__cell" tabindex="0">AAA9639263711</td>
+              <td class="govuk-table__cell" tabindex="0">External Local Authority</td>
+              <td class="govuk-table__cell" tabindex="0">53840</td>
+              <td class="govuk-table__cell" tabindex="0">25/04/2022</td>
+              <td class="govuk-table__cell" tabindex="0">N/A</td>
+              <td class="govuk-table__cell" tabindex="0">01/01/2022</td>
+              <td class="govuk-table__cell" tabindex="0">No</td>
+            </tr>
+            <tr class="govuk-table__row" tabindex="0">
+              <td scope="row" class="govuk-table__header" tabindex="0">1139341019</td>
+              <td class="govuk-table__cell" tabindex="0">AAA3104409026</td>
               <td class="govuk-table__cell" tabindex="0">Family/Carer</td>
-              <td class="govuk-table__cell" tabindex="0">4839</td>
-              <td class="govuk-table__cell" tabindex="0">09/09/2022</td>
-              <td class="govuk-table__cell" tabindex="0">27/01/2023</td>
-              <td class="govuk-table__cell" tabindex="0">17/12/2021</td>
+              <td class="govuk-table__cell" tabindex="0">30870</td>
+              <td class="govuk-table__cell" tabindex="0">02/03/2022</td>
+              <td class="govuk-table__cell" tabindex="0">15/06/2022</td>
+              <td class="govuk-table__cell" tabindex="0">01/01/2022</td>
               <td class="govuk-table__cell" tabindex="0">No</td>
             </tr>
             <tr class="govuk-table__row" tabindex="0">
-              <td scope="row" class="govuk-table__header" tabindex="0">2034404</td>
-              <td class="govuk-table__cell" tabindex="0">Z929223616006</td>
+              <td scope="row" class="govuk-table__header" tabindex="0">3628497071</td>
+              <td class="govuk-table__cell" tabindex="0">AAA9681810896</td>
+              <td class="govuk-table__cell" tabindex="0">General Practitioner</td>
+              <td class="govuk-table__cell" tabindex="0">31763</td>
+              <td class="govuk-table__cell" tabindex="0">18/03/2022</td>
+              <td class="govuk-table__cell" tabindex="0">N/A</td>
+              <td class="govuk-table__cell" tabindex="0">01/01/2022</td>
+              <td class="govuk-table__cell" tabindex="0">No</td>
+            </tr>
+            <tr class="govuk-table__row" tabindex="0">
+              <td scope="row" class="govuk-table__header" tabindex="0">3744988817</td>
+              <td class="govuk-table__cell" tabindex="0">AAA9223707215</td>
+              <td class="govuk-table__cell" tabindex="0">General Practitioner</td>
+              <td class="govuk-table__cell" tabindex="0">22475</td>
+              <td class="govuk-table__cell" tabindex="0">29/03/2022</td>
+              <td class="govuk-table__cell" tabindex="0">N/A</td>
+              <td class="govuk-table__cell" tabindex="0">01/01/2022</td>
+              <td class="govuk-table__cell" tabindex="0">Yes</td>
+            </tr>
+            <tr class="govuk-table__row" tabindex="0">
+              <td scope="row" class="govuk-table__header" tabindex="0">4309614436</td>
+              <td class="govuk-table__cell" tabindex="0">AAA9774310430</td>
+              <td class="govuk-table__cell" tabindex="0">General Practitioner</td>
+              <td class="govuk-table__cell" tabindex="0">48895</td>
+              <td class="govuk-table__cell" tabindex="0">04/04/2022</td>
+              <td class="govuk-table__cell" tabindex="0">N/A</td>
+              <td class="govuk-table__cell" tabindex="0">01/01/2022</td>
+              <td class="govuk-table__cell" tabindex="0">No</td>
+            </tr>
+            <tr class="govuk-table__row" tabindex="0">
+              <td scope="row" class="govuk-table__header" tabindex="0">9021471965</td>
+              <td class="govuk-table__cell" tabindex="0">AAA9417282751</td>
+              <td class="govuk-table__cell" tabindex="0">General Practitioner</td>
+              <td class="govuk-table__cell" tabindex="0">30480</td>
+              <td class="govuk-table__cell" tabindex="0">28/03/2022</td>
+              <td class="govuk-table__cell" tabindex="0">N/A</td>
+              <td class="govuk-table__cell" tabindex="0">01/01/2022</td>
+              <td class="govuk-table__cell" tabindex="0">No</td>
+            </tr>
+            <tr class="govuk-table__row" tabindex="0">
+              <td scope="row" class="govuk-table__header" tabindex="0">2702775108</td>
+              <td class="govuk-table__cell" tabindex="0">AAA9283130525</td>
               <td class="govuk-table__cell" tabindex="0">Health Visitor</td>
-              <td class="govuk-table__cell" tabindex="0">11589</td>
-              <td class="govuk-table__cell" tabindex="0">10/01/2023</td>
-              <td class="govuk-table__cell" tabindex="0">06/02/2023</td>
-              <td class="govuk-table__cell" tabindex="0">22/07/2021</td>
+              <td class="govuk-table__cell" tabindex="0">47613</td>
+              <td class="govuk-table__cell" tabindex="0">23/03/2022</td>
+              <td class="govuk-table__cell" tabindex="0">N/A</td>
+              <td class="govuk-table__cell" tabindex="0">01/01/2022</td>
               <td class="govuk-table__cell" tabindex="0">No</td>
             </tr>
             <tr class="govuk-table__row" tabindex="0">
-              <td scope="row" class="govuk-table__header" tabindex="0">2028346</td>
-              <td class="govuk-table__cell" tabindex="0">D887219814092</td>
-              <td class="govuk-table__cell" tabindex="0">LA Social Care</td>
-              <td class="govuk-table__cell" tabindex="0">9172</td>
-              <td class="govuk-table__cell" tabindex="0">25/10/2022</td>
-              <td class="govuk-table__cell" tabindex="0">12/01/2023</td>
-              <td class="govuk-table__cell" tabindex="0">16/12/2021</td>
+              <td scope="row" class="govuk-table__header" tabindex="0">6496579313</td>
+              <td class="govuk-table__cell" tabindex="0">AAA9608417750</td>
+              <td class="govuk-table__cell" tabindex="0">Housing</td>
+              <td class="govuk-table__cell" tabindex="0">53839</td>
+              <td class="govuk-table__cell" tabindex="0">26/01/2022</td>
+              <td class="govuk-table__cell" tabindex="0">N/A</td>
+              <td class="govuk-table__cell" tabindex="0">01/01/2022</td>
               <td class="govuk-table__cell" tabindex="0">No</td>
             </tr>
             <tr class="govuk-table__row" tabindex="0">
-              <td scope="row" class="govuk-table__header" tabindex="0">723193</td>
-              <td class="govuk-table__cell" tabindex="0">C840252615025</td>
-              <td class="govuk-table__cell" tabindex="0">LA Social Care</td>
-              <td class="govuk-table__cell" tabindex="0">891</td>
-              <td class="govuk-table__cell" tabindex="0">28/09/2022</td>
-              <td class="govuk-table__cell" tabindex="0">21/11/2022</td>
-              <td class="govuk-table__cell" tabindex="0">25/05/2021</td>
+              <td scope="row" class="govuk-table__header" tabindex="0">7702074514</td>
+              <td class="govuk-table__cell" tabindex="0">AAA9145373213</td>
+              <td class="govuk-table__cell" tabindex="0">Housing</td>
+              <td class="govuk-table__cell" tabindex="0">53068</td>
+              <td class="govuk-table__cell" tabindex="0">20/02/2022</td>
+              <td class="govuk-table__cell" tabindex="0">N/A</td>
+              <td class="govuk-table__cell" tabindex="0">01/01/2022</td>
               <td class="govuk-table__cell" tabindex="0">No</td>
             </tr>
-            
             <tr class="govuk-table__row" tabindex="0">
-              <td scope="row" class="govuk-table__header" tabindex="0">582230</td>
-              <td class="govuk-table__cell" tabindex="0">P840249713027</td>
+              <td scope="row" class="govuk-table__header" tabindex="0">3018664607</td>
+              <td class="govuk-table__cell" tabindex="0">AAA9532366523</td>
+              <td class="govuk-table__cell" tabindex="0">Local Authority Department</td>
+              <td class="govuk-table__cell" tabindex="0">37392</td>
+              <td class="govuk-table__cell" tabindex="0">01/03/2022</td>
+              <td class="govuk-table__cell" tabindex="0">N/A</td>
+              <td class="govuk-table__cell" tabindex="0">01/01/2022</td>
+              <td class="govuk-table__cell" tabindex="0">No</td>
+            </tr><tr class="govuk-table__row" tabindex="0">
+              <td scope="row" class="govuk-table__header" tabindex="0">3122472859</td>
+              <td class="govuk-table__cell" tabindex="0">AAA9745659176</td>
+              <td class="govuk-table__cell" tabindex="0">Local Authority Department</td>
+              <td class="govuk-table__cell" tabindex="0">35629</td>
+              <td class="govuk-table__cell" tabindex="0">30/03/2022</td>
+              <td class="govuk-table__cell" tabindex="0">N/A</td>
+              <td class="govuk-table__cell" tabindex="0">01/01/2022</td>
+              <td class="govuk-table__cell" tabindex="0">No</td>
+            </tr>
+            <tr class="govuk-table__row" tabindex="0">
+              <td scope="row" class="govuk-table__header" tabindex="0">6973128263</td>
+              <td class="govuk-table__cell" tabindex="0">AAA9703707646</td>
+              <td class="govuk-table__cell" tabindex="0">Local Authority Department</td>
+              <td class="govuk-table__cell" tabindex="0">55953</td>
+              <td class="govuk-table__cell" tabindex="0">06/03/2022</td>
+              <td class="govuk-table__cell" tabindex="0">N/A</td>
+              <td class="govuk-table__cell" tabindex="0">01/01/2022</td>
+              <td class="govuk-table__cell" tabindex="0">No</td>
+            </tr>
+            <tr class="govuk-table__row" tabindex="0">
+              <td scope="row" class="govuk-table__header" tabindex="0">8701507426</td>
+              <td class="govuk-table__cell" tabindex="0">8701507426</td>
+              <td class="govuk-table__cell" tabindex="0">Local Authority Department</td>
+              <td class="govuk-table__cell" tabindex="0">29903</td>
+              <td class="govuk-table__cell" tabindex="0">03/02/2022</td>
+              <td class="govuk-table__cell" tabindex="0">N/A</td>
+              <td class="govuk-table__cell" tabindex="0">01/01/2022</td>
+              <td class="govuk-table__cell" tabindex="0">No</td>
+            </tr>
+            <tr class="govuk-table__row" tabindex="0">
+              <td scope="row" class="govuk-table__header" tabindex="0">9285236360</td>
+              <td class="govuk-table__cell" tabindex="0">AAA9467918025</td>
+              <td class="govuk-table__cell" tabindex="0">Local Authority Department</td>
+              <td class="govuk-table__cell" tabindex="0">39725</td>
+              <td class="govuk-table__cell" tabindex="0">26/02/2022</td>
+              <td class="govuk-table__cell" tabindex="0">N/A</td>
+              <td class="govuk-table__cell" tabindex="0">01/01/2022</td>
+              <td class="govuk-table__cell" tabindex="0">No</td>
+            </tr>
+            <tr class="govuk-table__row" tabindex="0">
+              <td scope="row" class="govuk-table__header" tabindex="0">2896792610</td>
+              <td class="govuk-table__cell" tabindex="0">AAA1848859519</td>
+              <td class="govuk-table__cell" tabindex="0">Local Authority Social Care</td>
+              <td class="govuk-table__cell" tabindex="0">15001</td>
+              <td class="govuk-table__cell" tabindex="0">29/03/2022</td>
+              <td class="govuk-table__cell" tabindex="0">N/A</td>
+              <td class="govuk-table__cell" tabindex="0">01/01/2022</td>
+              <td class="govuk-table__cell" tabindex="0">No</td>
+            </tr>
+            <tr class="govuk-table__row" tabindex="0">
+              <td scope="row" class="govuk-table__header" tabindex="0">3742600565</td>
+              <td class="govuk-table__cell" tabindex="0">AAA9160984724</td>
+              <td class="govuk-table__cell" tabindex="0">Other Agency</td>
+              <td class="govuk-table__cell" tabindex="0">38376</td>
+              <td class="govuk-table__cell" tabindex="0">03/02/2022</td>
+              <td class="govuk-table__cell" tabindex="0">N/A</td>
+              <td class="govuk-table__cell" tabindex="0">01/01/2022</td>
+              <td class="govuk-table__cell" tabindex="0">No</td>
+            </tr>
+            <tr class="govuk-table__row" tabindex="0">
+              <td scope="row" class="govuk-table__header" tabindex="0">2337094963</td>
+              <td class="govuk-table__cell" tabindex="0">AAA9827014265</td>
               <td class="govuk-table__cell" tabindex="0">Other Health Service</td>
-              <td class="govuk-table__cell" tabindex="0">3545</td>
-              <td class="govuk-table__cell" tabindex="0">17/10/2022</td>
-              <td class="govuk-table__cell" tabindex="0">20/12/2022</td>
-              <td class="govuk-table__cell" tabindex="0">17/01/2022</td>
+              <td class="govuk-table__cell" tabindex="0">32824</td>
+              <td class="govuk-table__cell" tabindex="0">22/02/2022</td>
+              <td class="govuk-table__cell" tabindex="0">N/A</td>
+              <td class="govuk-table__cell" tabindex="0">01/01/2022</td>
               <td class="govuk-table__cell" tabindex="0">No</td>
             </tr>
             <tr class="govuk-table__row" tabindex="0">
-              <td scope="row" class="govuk-table__header" tabindex="0">712683</td>
-              <td class="govuk-table__cell" tabindex="0">J840352509016</td>
+              <td scope="row" class="govuk-table__header" tabindex="0">3852083660</td>
+              <td class="govuk-table__cell" tabindex="0">AAA9286876960</td>
+              <td class="govuk-table__cell" tabindex="0">Other Health Service</td>
+              <td class="govuk-table__cell" tabindex="0">23080</td>
+              <td class="govuk-table__cell" tabindex="0">04/03/2022</td>
+              <td class="govuk-table__cell" tabindex="0">N/A</td>
+              <td class="govuk-table__cell" tabindex="0">01/01/2022</td>
+              <td class="govuk-table__cell" tabindex="0">Yes</td>
+            </tr>
+            <tr class="govuk-table__row" tabindex="0">
+              <td scope="row" class="govuk-table__header" tabindex="0">9009690039</td>
+              <td class="govuk-table__cell" tabindex="0">AAA9522289027</td>
+              <td class="govuk-table__cell" tabindex="0">Other Individual</td>
+              <td class="govuk-table__cell" tabindex="0">32222</td>
+              <td class="govuk-table__cell" tabindex="0">25/03/2022</td>
+              <td class="govuk-table__cell" tabindex="0">N/A</td>
+              <td class="govuk-table__cell" tabindex="0">01/01/2022</td>
+              <td class="govuk-table__cell" tabindex="0">No</td>
+            </tr>
+            <tr class="govuk-table__row" tabindex="0">
+              <td scope="row" class="govuk-table__header" tabindex="0">1663924958</td>
+              <td class="govuk-table__cell" tabindex="0">AAA6198310411</td>
               <td class="govuk-table__cell" tabindex="0">Other Legal Agency</td>
-              <td class="govuk-table__cell" tabindex="0">3419</td>
-              <td class="govuk-table__cell" tabindex="0">22/11/2022</td>
-              <td class="govuk-table__cell" tabindex="0"></td>
-              <td class="govuk-table__cell" tabindex="0">21/04/2022</td>
+              <td class="govuk-table__cell" tabindex="0">52428</td>
+              <td class="govuk-table__cell" tabindex="0">16/04/2022</td>
+              <td class="govuk-table__cell" tabindex="0">N/A</td>
+              <td class="govuk-table__cell" tabindex="0">01/01/2022</td>
               <td class="govuk-table__cell" tabindex="0">No</td>
             </tr>
             <tr class="govuk-table__row" tabindex="0">
-              <td scope="row" class="govuk-table__header" tabindex="0">2000208</td>
-              <td class="govuk-table__cell" tabindex="0"></td>
+              <td scope="row" class="govuk-table__header" tabindex="0">5229249241</td>
+              <td class="govuk-table__cell" tabindex="0">AAA9147042558</td>
               <td class="govuk-table__cell" tabindex="0">Other Primary Health Service</td>
-              <td class="govuk-table__cell" tabindex="0">3319</td>
-              <td class="govuk-table__cell" tabindex="0">26/10/2022</td>
-              <td class="govuk-table__cell" tabindex="0">08/12/2022</td>
-              <td class="govuk-table__cell" tabindex="0">07/04/2022</td>
+              <td class="govuk-table__cell" tabindex="0">19678</td>
+              <td class="govuk-table__cell" tabindex="0">19/01/2022</td>
+              <td class="govuk-table__cell" tabindex="0">N/A</td>
+              <td class="govuk-table__cell" tabindex="0">01/01/2022</td>
               <td class="govuk-table__cell" tabindex="0">No</td>
             </tr>
             <tr class="govuk-table__row" tabindex="0">
-              <td scope="row" class="govuk-table__header" tabindex="0">2039350</td>
-              <td class="govuk-table__cell" tabindex="0">A390216310021</td>
+              <td scope="row" class="govuk-table__header" tabindex="0">2614566720</td>
+              <td class="govuk-table__cell" tabindex="0">AAA9176757613</td>
               <td class="govuk-table__cell" tabindex="0">Police</td>
-              <td class="govuk-table__cell" tabindex="0">9620</td>
-              <td class="govuk-table__cell" tabindex="0">02/09/2022</td>
-              <td class="govuk-table__cell" tabindex="0"></td>
-              <td class="govuk-table__cell" tabindex="0"></td>
+              <td class="govuk-table__cell" tabindex="0">50985</td>
+              <td class="govuk-table__cell" tabindex="0">17/01/2022</td>
+              <td class="govuk-table__cell" tabindex="0">N/A</td>
+              <td class="govuk-table__cell" tabindex="0">01/01/2022</td>
               <td class="govuk-table__cell" tabindex="0">No</td>
             </tr>
             <tr class="govuk-table__row" tabindex="0">
-              <td scope="row" class="govuk-table__header" tabindex="0">739715</td>
-              <td class="govuk-table__cell" tabindex="0">A840201616007</td>
+              <td scope="row" class="govuk-table__header" tabindex="0">3155159443</td>
+              <td class="govuk-table__cell" tabindex="0">AAA9769710969</td>
               <td class="govuk-table__cell" tabindex="0">Police</td>
-              <td class="govuk-table__cell" tabindex="0">7940</td>
-              <td class="govuk-table__cell" tabindex="0">18/09/2022</td>
-              <td class="govuk-table__cell" tabindex="0">22/12/2022</td>
-              <td class="govuk-table__cell" tabindex="0">23/04/2022</td>
+              <td class="govuk-table__cell" tabindex="0">57837</td>
+              <td class="govuk-table__cell" tabindex="0">05/02/2022</td>
+              <td class="govuk-table__cell" tabindex="0">N/A</td>
+              <td class="govuk-table__cell" tabindex="0">01/01/2022</td>
               <td class="govuk-table__cell" tabindex="0">No</td>
+            </tr>
+            <tr class="govuk-table__row" tabindex="0">
+              <td scope="row" class="govuk-table__header" tabindex="0">8895297438</td>
+              <td class="govuk-table__cell" tabindex="0">AAA9676475131</td>
+              <td class="govuk-table__cell" tabindex="0">Police</td>
+              <td class="govuk-table__cell" tabindex="0">17150</td>
+              <td class="govuk-table__cell" tabindex="0">24/01/2022</td>
+              <td class="govuk-table__cell" tabindex="0">N/A</td>
+              <td class="govuk-table__cell" tabindex="0">01/01/2022</td>
+              <td class="govuk-table__cell" tabindex="0">No</td>
+            </tr>
+            <tr class="govuk-table__row" tabindex="0">
+              <td scope="row" class="govuk-table__header" tabindex="0">7123947547</td>
+              <td class="govuk-table__cell" tabindex="0">AAA3627745837</td>
+              <td class="govuk-table__cell" tabindex="0">School Nurse</td>
+              <td class="govuk-table__cell" tabindex="0">12043</td>
+              <td class="govuk-table__cell" tabindex="0">24/04/2022</td>
+              <td class="govuk-table__cell" tabindex="0">14/09/2022</td>
+              <td class="govuk-table__cell" tabindex="0">01/01/2022</td>
+              <td class="govuk-table__cell" tabindex="0">No</td>
+            </tr>
+            <tr class="govuk-table__row" tabindex="0">
+              <td scope="row" class="govuk-table__header" tabindex="0">9268639414</td>
+              <td class="govuk-table__cell" tabindex="0">AAA2866177632</td>
+              <td class="govuk-table__cell" tabindex="0">Schools</td>
+              <td class="govuk-table__cell" tabindex="0">22393</td>
+              <td class="govuk-table__cell" tabindex="0">08/01/2022</td>
+              <td class="govuk-table__cell" tabindex="0">N/A</td>
+              <td class="govuk-table__cell" tabindex="0">01/01/2022</td>
+              <td class="govuk-table__cell" tabindex="0">No</td>
+            </tr>
+            <tr class="govuk-table__row" tabindex="0">
+              <td scope="row" class="govuk-table__header" tabindex="0">2164666947</td>
+              <td class="govuk-table__cell" tabindex="0">AAA9570992445</td>
+              <td class="govuk-table__cell" tabindex="0">Unknown</td>
+              <td class="govuk-table__cell" tabindex="0">50343</td>
+              <td class="govuk-table__cell" tabindex="0">06/02/2022</td>
+              <td class="govuk-table__cell" tabindex="0">N/A</td>
+              <td class="govuk-table__cell" tabindex="0">01/01/2022</td>
+              <td class="govuk-table__cell" tabindex="0">Yes</td>
+            </tr>
+            <tr class="govuk-table__row" tabindex="0">
+              <td scope="row" class="govuk-table__header" tabindex="0">2399680283</td>
+              <td class="govuk-table__cell" tabindex="0">AAA9107734135</td>
+              <td class="govuk-table__cell" tabindex="0">Unknown</td>
+              <td class="govuk-table__cell" tabindex="0">9774</td>
+              <td class="govuk-table__cell" tabindex="0">04/04/2022</td>
+              <td class="govuk-table__cell" tabindex="0">N/A</td>
+              <td class="govuk-table__cell" tabindex="0">01/01/2022</td>
+              <td class="govuk-table__cell" tabindex="0">Yes</td>
             </tr>
             <!-- <tr class="govuk-table__row" tabindex="0">
               <td scope="row" class="govuk-table__header" tabindex="0"></td>
@@ -299,11 +517,10 @@
               <td class="govuk-table__cell" tabindex="0"></td>
               <td class="govuk-table__cell" tabindex="0"></td>
             </tr> -->
-            
           </tbody>
           <tfoot>
             <tr class="govuk-table__row" tabindex="0">
-              <td class="govuk-table__cell" colspan="8" tabindex="0">* UPN is an optional attribute for local authorities to enter into the system, Additionally, if a child has not started school or is home schooled, they will not have a UPN.</td>
+              <td class="govuk-table__cell" colspan="8" tabindex="0">*The unique pupil number (UPN) is a 13-character code that identifies each pupil in the local-authority-maintained school system.<br/><br/>It is an optional attribute for local authorities to enter into the system, Additionally, if a child has not started school or is home schooled, they will not have a UPN.</td>
             </tr>
           </tfoot>
         </table>

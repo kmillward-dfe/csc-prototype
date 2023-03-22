@@ -9,7 +9,7 @@
 <nav id="app-navigation" class="app-navigation js-app-navigation govuk-clearfix" role="navigation" aria-labelledby="app-navigation-heading">
   <h2 class="govuk-visually-hidden" id="app-navigation-heading">Menu</h2>
   <ul class="app-navigation__list app-width-container">
-    <li><a href="landing.html"><strong>Home</strong></a></li>
+    <li><a href="/index.html"><strong>Home</strong></a></li>
     <li><a href="/latest-activity.html"><strong>Latest Activity</strong></a></li>
     <li><a href="/child-in-need-landing.html"><strong>Child in Need</strong></a></li>
     <li><a href="/child-protection-landing.html"><strong>Child Protection</strong></a></li>
@@ -61,26 +61,20 @@
                   <div class="govuk-date-input" id="passport-issued">
                     <div class="govuk-date-input__item">
                       <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
-                          Day
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric">
+                        <label for="day-from" class="govuk-label govuk-date-input__label">Day</label>
+                        <input type="text" id="day-from" name="day-from" class="govuk-input govuk-date-input__input govuk-input--width-2" inputmode="numeric">
                       </div>
                     </div>
                     <div class="govuk-date-input__item">
                       <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
-                          Month
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric">
+                        <label for="month-from" class="govuk-label govuk-date-input__label">Month</label>
+                        <input type="text" id="month-from" name="month-from" class="govuk-input govuk-date-input__input govuk-input--width-2" inputmode="numeric">
                       </div>
                     </div>
                     <div class="govuk-date-input__item">
                       <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
-                          Year
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" inputmode="numeric">
+                        <label for="year-from" class="govuk-label govuk-date-input__label">Year</label>
+                        <input type="text" id="year-from" name="year-from" class="govuk-input govuk-date-input__input govuk-input--width-4" inputmode="numeric">
                       </div>
                     </div>
                   </div>
@@ -97,26 +91,20 @@
                   <div class="govuk-date-input" id="passport-issued">
                     <div class="govuk-date-input__item">
                       <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
-                          Day
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric">
+                        <label class="govuk-label govuk-date-input__label" for="day-to">Day</label>
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="day-to" name="day-to" type="text" inputmode="numeric">
                       </div>
                     </div>
                     <div class="govuk-date-input__item">
                       <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
-                          Month
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric">
+                        <label class="govuk-label govuk-date-input__label" for="month-to">Month</label>
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="month-to" name="month-to" type="text" inputmode="numeric">
                       </div>
                     </div>
                     <div class="govuk-date-input__item">
                       <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
-                          Year
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" inputmode="numeric">
+                        <label class="govuk-label govuk-date-input__label" for="year-to">Year</label>
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="year-to" name="year-to" type="text" inputmode="numeric">
                       </div>
                     </div>
                   </div>
@@ -200,7 +188,7 @@
         <div class="govuk-tabs__panel" id="referrals-received">
           <div class="greenbox">
             <h2>Referrals received</h2>
-            <p>2,143</p>  
+            <p>343</p>  
           </div>
           <img src="/public/images/pink.jpg" alt="Graph showing the demand from the last week" width="100%">
         </div>
@@ -208,7 +196,7 @@
         <div class="govuk-tabs__panel" id="nfa-referrals-numbs">
           <div class="greenbox">
             <h2>Number of Referrals with No Further Action</h2>
-            <p>1.91</p>  
+            <p>66</p>  
           </div>
           <img src="/public/images/green.jpg" alt="Graph showing the demand from the last month" width="100%">
         </div>
@@ -216,7 +204,7 @@
         <div class="govuk-tabs__panel" id="nfa-referrals-percent">
           <div class="greenbox">
             <h2>% Referrals with with No Further Action</h2>
-            <p>57.86%</p>  
+            <p>19.24%</p>  
           </div>
           <img src="/public/images/purple.jpg" alt="Graph showing the demand from the last week" width="100%">
         </div>
@@ -236,46 +224,144 @@
             </thead>
             <tbody class="govuk-table__body">
               <tr class="govuk-table__row">
-                <td class="govuk-table__cell">Police</td>
-                <td class="govuk-table__cell">928</td>
-                <td class="govuk-table__cell">43.30%</td>
-                <td class="govuk-table__cell"></td>
-                <td class="govuk-table__cell"></td>
+                <td class="govuk-table__cell">Accident &amp; Emergency</td>
+                <td class="govuk-table__cell">10</td>
+                <td class="govuk-table__cell">2.92%</td>
+                <td class="govuk-table__cell">0</td>
+                <td class="govuk-table__cell">0%</td>
               </tr>
               <tr class="govuk-table__row">
-                <td class="govuk-table__cell">Schools</td>
-                <td class="govuk-table__cell">253</td>
-                <td class="govuk-table__cell">11.81%</td>
-                <td class="govuk-table__cell">1</td>
-                <td class="govuk-table__cell">2.44%</td>
+                <td class="govuk-table__cell">Acquaintence</td>
+                <td class="govuk-table__cell">13</td>
+                <td class="govuk-table__cell">3.79%</td>
+                <td class="govuk-table__cell">3</td>
+                <td class="govuk-table__cell">4.55%</td>
               </tr>
               <tr class="govuk-table__row">
-                <td class="govuk-table__cell">Other Primary Health Service</td>
-                <td class="govuk-table__cell">242</td>
-                <td class="govuk-table__cell">11.29%</td>
-                <td class="govuk-table__cell"></td>
-                <td class="govuk-table__cell"></td>
+                <td class="govuk-table__cell">Anonymous</td>
+                <td class="govuk-table__cell">21</td>
+                <td class="govuk-table__cell">6.12%</td>
+                <td class="govuk-table__cell">4</td>
+                <td class="govuk-table__cell">6.06%</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Education Services</td>
+                <td class="govuk-table__cell">19</td>
+                <td class="govuk-table__cell">5.54%</td>
+                <td class="govuk-table__cell">4</td>
+                <td class="govuk-table__cell">6.06%</td>
               </tr>
               <tr class="govuk-table__row">
                 <td class="govuk-table__cell">External Local Authority</td>
-                <td class="govuk-table__cell">186</td>
-                <td class="govuk-table__cell">8.68%</td>
-                <td class="govuk-table__cell">8</td>
-                <td class="govuk-table__cell">19.51%</td>
+                <td class="govuk-table__cell">10</td>
+                <td class="govuk-table__cell">2.92%</td>
+                <td class="govuk-table__cell">4</td>
+                <td class="govuk-table__cell">6.06%</td>
               </tr>
               <tr class="govuk-table__row">
                 <td class="govuk-table__cell">Family/Carer</td>
-                <td class="govuk-table__cell">130</td>
-                <td class="govuk-table__cell">6.07%</td>
+                <td class="govuk-table__cell">21</td>
+                <td class="govuk-table__cell">6.12%</td>
+                <td class="govuk-table__cell">3</td>
+                <td class="govuk-table__cell">4.55%</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">General Practitioner</td>
+                <td class="govuk-table__cell">22</td>
+                <td class="govuk-table__cell">6.41%</td>
+                <td class="govuk-table__cell">5</td>
+                <td class="govuk-table__cell">7.58%</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Health Visitor</td>
                 <td class="govuk-table__cell">20</td>
-                <td class="govuk-table__cell">48.78%</td>
+                <td class="govuk-table__cell">5.83%</td>
+                <td class="govuk-table__cell">5</td>
+                <td class="govuk-table__cell">7.58%</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Housing</td>
+                <td class="govuk-table__cell">12</td>
+                <td class="govuk-table__cell">3.50%</td>
+                <td class="govuk-table__cell">0</td>
+                <td class="govuk-table__cell">0%</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Local Authority Department</td>
+                <td class="govuk-table__cell">21</td>
+                <td class="govuk-table__cell">6.12%</td>
+                <td class="govuk-table__cell">8</td>
+                <td class="govuk-table__cell">12.12%</td>
               </tr>
               <tr class="govuk-table__row">
                 <td class="govuk-table__cell">Local Authority Social Care</td>
-                <td class="govuk-table__cell">125</td>
+                <td class="govuk-table__cell">22</td>
+                <td class="govuk-table__cell">6.41%</td>
+                <td class="govuk-table__cell">2</td>
+                <td class="govuk-table__cell">3.03%</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Other Agency</td>
+                <td class="govuk-table__cell">20</td>
                 <td class="govuk-table__cell">5.83%</td>
-                <td class="govuk-table__cell"></td>
-                <td class="govuk-table__cell"></td>
+                <td class="govuk-table__cell">5</td>
+                <td class="govuk-table__cell">7.58%</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Other Health Service</td>
+                <td class="govuk-table__cell">22</td>
+                <td class="govuk-table__cell">6.41%</td>
+                <td class="govuk-table__cell">6</td>
+                <td class="govuk-table__cell">9.09%</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Other Individual</td>
+                <td class="govuk-table__cell">11</td>
+                <td class="govuk-table__cell">3.21%</td>
+                <td class="govuk-table__cell">1</td>
+                <td class="govuk-table__cell">1.52%</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Other Legal Agency</td>
+                <td class="govuk-table__cell">13</td>
+                <td class="govuk-table__cell">3.79</td>
+                <td class="govuk-table__cell">4</td>
+                <td class="govuk-table__cell">6.06%</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Other Primary Health Service</td>
+                <td class="govuk-table__cell">15</td>
+                <td class="govuk-table__cell">4.37%</td>
+                <td class="govuk-table__cell">1</td>
+                <td class="govuk-table__cell">1.52%</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Police</td>
+                <td class="govuk-table__cell">14</td>
+                <td class="govuk-table__cell">4.08%</td>
+                <td class="govuk-table__cell">3</td>
+                <td class="govuk-table__cell">4.55%</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">School Nurse</td>
+                <td class="govuk-table__cell">15</td>
+                <td class="govuk-table__cell">4.37%</td>
+                <td class="govuk-table__cell">3</td>
+                <td class="govuk-table__cell">4.55%</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Schools</td>
+                <td class="govuk-table__cell">11</td>
+                <td class="govuk-table__cell">3.21%</td>
+                <td class="govuk-table__cell">0</td>
+                <td class="govuk-table__cell">0.00%</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Unknown Sources</td>
+                <td class="govuk-table__cell">31</td>
+                <td class="govuk-table__cell">9.04%</td>
+                <td class="govuk-table__cell">5</td>
+                <td class="govuk-table__cell">7.58%</td>
               </tr>
               <!--<tr class="govuk-table__row">
                 <td class="govuk-table__cell"></td>
@@ -286,9 +372,9 @@
               </tr>-->
               <tr class="govuk-table__row">
                 <td class="govuk-table__cell"><strong>Total</strong></td>
-                <td class="govuk-table__cell"><strong>2,143</strong></td>
+                <td class="govuk-table__cell"><strong>343</strong></td>
                 <td class="govuk-table__cell"><strong>100.00%</strong></td>
-                <td class="govuk-table__cell"><strong>41</strong></td>
+                <td class="govuk-table__cell"><strong>66</strong></td>
                 <td class="govuk-table__cell"><strong>100.00%</strong></td>
               </tr>
             </tbody>

@@ -2,94 +2,71 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Child in Need – Children's Social Care
+Children's Social Care
 {% endblock %}
 
 {% block content %}
 <nav id="app-navigation" class="app-navigation js-app-navigation govuk-clearfix" role="navigation" aria-labelledby="app-navigation-heading">
   <h2 class="govuk-visually-hidden" id="app-navigation-heading">Menu</h2>
   <ul class="app-navigation__list app-width-container">
-      <li><a href="/child-in-need.html"><strong>Child in Need</strong></a></li>
-      <li><a href="/child-protection.html"><strong>Child Protection</strong></a></li>
-      <li><a href="/child-looked-after.html"><strong>Child Looked After</strong></a></li>
-      <li><a href="/special-educational-needs.html"><strong>Special Educational Needs</strong></a></li>
-      <li><a href="/social-care-practitioner-data.html"><strong>Social Care Practitioner Data</strong></a></li>
+    <li><a href="/index.html"><strong>Home</strong></a></li>
+    <li><a href="/latest-activity.html"><strong>Latest Activity</strong></a></li>
+    <li><a href="/child-in-need-landing.html"><strong>Child in Need</strong></a></li>
+    <li><a href="/child-protection-landing.html"><strong>Child Protection</strong></a></li>
+    <li><a href="/child-looked-after-landing.html"><strong>Child Looked After</strong></a></li>
+    <li><a href="/ehcp-referrals.html"><strong>Education Health Care Plans</strong></a></li>
+    <li><a href="/glossary.html"><strong>Glossary</strong></a></li>
   </ul>
 </nav>
 
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-full">
-      <h1 class="govuk-heading-xl">
-        Children's Social Care Data Dashboards
-        <span class="govuk-caption-m">For more information, please visit <a href="https://www.gov.uk">www.gov.uk</a></span>
-      </h1>
-      
-      <p>Nullam lectus libero, placerat nec dui eu, convallis cursus diam. Nam dapibus augue a magna laoreet luctus. Proin sodales fermentum porta. Nulla risus elit, bibendum at eros ut, rutrum semper nibh. Proin interdum tristique tincidunt. Proin feugiat pulvinar quam ut congue. Ut aliquam ac nibh ut vestibulum.</p>
-      <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-half">
-          <div class="">
-            <div class="">
-              <div class="">
-                <h3 class="">
-                  <a class="" href="/child-in-need.html">Child in Need (CiN)</a>
-                </h3>  
-                <p>Showing data for Child in Need... urabitur dui urna, euismod imperdiet volutpat non, cursus ac mi. Donec sed turpis vitae lorem auctor luctus. Morbi lorem metus, pulvinar ut tincidunt ac, tristique et lorem.</p>         
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="govuk-grid-column-one-half">
-          <div class="">
-            <div class="">
-              <div class="">
-                <h3 class="">
-                  <a class="" href="/child-protection.html">Child Protection</a>
-                </h3>  
-                <p>Showing data for Child Protection... Vestibulum a neque rutrum, ullamcorper leo id, scelerisque urna. Cras elementum quis leo at commodo. Proin blandit sapien velit, non varius ante dignissim tincidunt.</p>         
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="govuk-grid-column-one-half">
-          <div class="">
-            <div class="">
-              <div class="">
-                <h3 class="">
-                  <a class="" href="/child-looked-after.html">Child Looked After</a>
-                </h3>       
-                <p>Showing data for Child Looked After... Vivamus pharetra lectus metus. Integer mollis, felis in pretium faucibus, mauris massa laoreet dui, at efficitur risus magna eget turpis.</p>    
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="govuk-grid-column-one-half">
-          <div class="">
-            <div class="">
-              <div class="">
-                <h3 class="">
-                  <a class="" href="/special-educational-needs.html">Special Educational Needs</a>
-                </h3> 
-                <p>Showing data for Special Educational Needs... Praesent finibus lacus nunc, eget accumsan velit congue ac. In placerat ut nibh quis auctor. In ex quam, lacinia in metus quis, egestas gravida mauris.</p>       
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="govuk-grid-column-one-half">
-          <div class="">
-            <div class="">
-              <div class="">
-                <h3 class="">
-                  <a class="" href="/social-care-practitioner-data.html">Social Care Practitioner Data</a>
-                </h3> 
-                <p>Showing Social Care Practitioner Data... Sed ullamcorper venenatis tortor, in bibendum augue. Fusce tristique tempus nisi ut bibendum. Mauris et dignissim ligula. Phasellus laoreet eu lacus quis tristique.</p>       
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>        
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
 
-      <a href="/landing.html" style="display:none;">Updates</a>
+
+  <section class="app-section">
+    <div class="govuk-width-container">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">Children's Social Care Dashboards</h1>
+          <p class="govuk-body-l" id="subheadinghomepage">Look at data and trends for Children’s Social Care Referrals, Re-referrals and Family Assessments. Use this if you work in the Children’s Social Care policy areas at the Department for Education (DfE).</p>
+        </div>
+      </div>
     </div>
+  </section>
+
+    <div class="landing-intro">
+      <div class="govuk-notification-banner" role="region"
+        aria-labelledby="govuk-notification-banner-title"
+        data-module="govuk-notification-banner">
+        <div class="govuk-notification-banner__header">
+          <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+            Important
+          </h2>
+        </div>
+        <div class="govuk-notification-banner__content">
+          <p class="govuk-notification-banner__heading">
+            This is for demonstration purposes only. It does not contain any real data.
+          </p>
+        </div>
+      </div>
+
+      <div class="landing-section">
+        <h2>Where the data comes from</h2>
+        <p>The data comes from Local Authority Children’s Social Care case management systems and is updated daily, with activity that has been recorded on the child’s case record.</p>
+      </div>
+      <div class="landing-section">
+        <h2>How to use this tool</h2>
+        <p>Get an up-to-date view of performance for each Local Authority, to help you understand the trends, risks and issues. Use this tool alongside other data sets. The tool shows a child’s journey from Referral, Assessment, Child in Need (CiN), Child Protection and Child Looked After (CLA).</p>
+        <p>Data is updated each day, so may not show the latest information.</p>
+      </div>
+      <div class="landing-section">
+        <h2>Give Feedback</h2>
+        <p>If you have any feedback or suggestions to improve our service, please complete and submit our feedback form.</p>
+        <p><a class="form" href="https://forms.office.com/Pages/ResponsePage.aspx?id=yXfS-grGoU2187O4s0qC-YlVLd4Zb0JAozA3q_d5NDVUN1pYVzNJVFQ0MUo5Q09EVDhaOEZIRENKVyQlQCN0PWcu">Submit a feedback form</a></p>
+      </div>
+    </div>  
+
   </div>
+</div>
 
 {% endblock %}

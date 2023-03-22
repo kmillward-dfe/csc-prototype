@@ -2,7 +2,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Child in Need Plans – Children's Social Care
+  Section 47 Enquiries Child Protection – Children's Social Care
 {% endblock %}
 
 {% block content %}
@@ -26,11 +26,11 @@
       <a class="govuk-breadcrumbs__link" href="/landing.html">Home</a>
     </li>
     <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="/child-in-need-landing.html">Child in Need</a>
+      <a class="govuk-breadcrumbs__link" href="/child-protection-landing.html">Child Protection</a>
     </li>
   </ol>
 </div>
-<h1 class="govuk-heading-xl">Child in Need Plans</h1>
+<h1 class="govuk-heading-xl">Section 47 Enquiries</h1>
 
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
@@ -43,7 +43,7 @@
             <div class="govuk-accordion__section-header">
               <h3 class="govuk-accordion__section-heading">
                 <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
-                  Child in Need Plan Start Date
+                  Section 47 date range
                 </span>
               </h3>
             </div>
@@ -112,79 +112,6 @@
               </div>
             </div>
           </div>
-          <div class="govuk-accordion__section ">
-            <div class="govuk-accordion__section-header">
-              <h3 class="govuk-accordion__section-heading">
-                <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
-                  Child in Need Plan End Date
-                </span>
-              </h3>
-            </div>
-            <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
-              <div class="govuk-form-group">
-                <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
-                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-                    <h3 class="govuk-fieldset__heading">
-                      Date from
-                    </h3>
-                  </legend>
-                  <div id="passport-issued-hint" class="govuk-hint">
-                    For example, 30 1 2023
-                  </div>
-                  <div class="govuk-date-input" id="passport-issued">
-                    <div class="govuk-date-input__item">
-                      <div class="govuk-form-group">
-                        <label for="day-from" class="govuk-label govuk-date-input__label">Day</label>
-                        <input type="text" id="day-from" name="day-from" class="govuk-input govuk-date-input__input govuk-input--width-2" inputmode="numeric">
-                      </div>
-                    </div>
-                    <div class="govuk-date-input__item">
-                      <div class="govuk-form-group">
-                        <label for="month-from" class="govuk-label govuk-date-input__label">Month</label>
-                        <input type="text" id="month-from" name="month-from" class="govuk-input govuk-date-input__input govuk-input--width-2" inputmode="numeric">
-                      </div>
-                    </div>
-                    <div class="govuk-date-input__item">
-                      <div class="govuk-form-group">
-                        <label for="year-from" class="govuk-label govuk-date-input__label">Year</label>
-                        <input type="text" id="year-from" name="year-from" class="govuk-input govuk-date-input__input govuk-input--width-4" inputmode="numeric">
-                      </div>
-                    </div>
-                  </div>
-                </fieldset>
-                <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
-                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-                    <h3 class="govuk-fieldset__heading">
-                      Date to
-                    </h3>
-                  </legend>
-                  <div id="passport-issued-hint" class="govuk-hint">
-                    For example, 30 1 2023
-                  </div>
-                  <div class="govuk-date-input" id="passport-issued">
-                    <div class="govuk-date-input__item">
-                      <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="end-day-to">Day</label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="end-day-to" name="end-day-to" type="text" inputmode="numeric">
-                      </div>
-                    </div>
-                    <div class="govuk-date-input__item">
-                      <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="end-month-to">Month</label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="end-month-to" name="end-month-to" type="text" inputmode="numeric">
-                      </div>
-                    </div>
-                    <div class="govuk-date-input__item">
-                      <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="end-year-to">Year</label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="end-year-to" name="end-year-to" type="text" inputmode="numeric">
-                      </div>
-                    </div>
-                  </div>
-                </fieldset>
-              </div>
-            </div>
-          </div>
           <!--<div class="govuk-accordion__section">
             <div class="govuk-accordion__section-header">
               <h3 class="govuk-accordion__section-heading">
@@ -238,42 +165,20 @@
         <ul class="govuk-tabs__list">
           <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
             <a class="govuk-tabs__tab" href="#start-date">
-              Child in Need Plans by start date
-            </a>
-          </li>
-          <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#end-date">
-              Closed Child in Need Plans by end date
+              Section 47 Enquiries by start date
             </a>
           </li>
         </ul>
         <!--inside tabs-->
         <div class="govuk-tabs__panel" id="start-date">
-          <div class="govuk-grid-column-one-half">
+          <div class="govuk-grid-column-full">
             <div class="greenbox">
-              <h2>Total Child in Need Plans started within date range</h2>
-              <p>310</p>  
-            </div>
-          </div>
-          <div class="govuk-grid-column-one-half">
-            <div class="greenbox">
-              <h2>Current Child in Need Plans started within date range</h2>
-              <p>293</p>  
+              <h2>Number of Section 47 Enquiries</h2>
+              <p>614</p>  
             </div>
           </div>
           <img src="/public/images/pink.jpg" alt="Graph showing the demand from the last week" width="100%">
         </div>
-
-        <div class="govuk-tabs__panel" id="end-date">
-          <div class="greenbox">
-            <h2>Child in Need Plans ended within date range</h2>
-            <p>45</p>  
-          </div>
-          
-          <img src="/public/images/green.jpg" alt="Graph showing the demand from the last month" width="100%">
-        </div>
-
-      
       </div>
     </div>
     <!--END OF TABS-->

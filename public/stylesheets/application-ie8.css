@@ -6020,6 +6020,11 @@ x:-moz-any-link {
   color: #0b0c0c;
 }
 
+.mobile-only {
+  position: absolute;
+  top: -9999px;
+}
+
 .govuk-notification-banner__content > * {
   max-width: 100%;
 }
@@ -6526,6 +6531,11 @@ ul.links-list a {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     margin-top: 10px;
+  }
+
+  .mobile-only {
+    position: relative;
+    top: 0;
   }
 }
 @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {

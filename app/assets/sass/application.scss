@@ -34,6 +34,11 @@ $govuk-assets-path: '/govuk/assets/';
     }
 }
 
+.mobile-only {
+    position: absolute;
+    top: -9999px;
+}
+
 .govuk-notification-banner__content > * {
     max-width: 100%;
 }
@@ -557,6 +562,10 @@ ul.links-list a {
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         margin-top: 10px;
+    }
+    .mobile-only {
+        position: relative;
+        top: 0;
     }
 }
 

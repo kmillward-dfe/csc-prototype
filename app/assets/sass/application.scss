@@ -503,6 +503,10 @@ ul.links-list a {
     .govuk-header .govuk-header__content {
         width: 75%;
     }
+    .homepage-services-and-info__list {
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -548,6 +552,11 @@ ul.links-list a {
         .govuk-grid-column-one-third, .govuk-grid-column-two-thirds {
             width: 100%;
         }
+    }
+    .homepage-services-and-info__list {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        margin-top: 10px;
     }
 }
 
